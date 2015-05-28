@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.wxp.weiboprifle.ObservableScrollView
+        android:id="@+id/id_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/head_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/head" />
+
+                <TextView
+                    android:id="@+id/id_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Wisimer"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/id_tab_top1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:text="主页" />
+
+                <Button
+                    android:id="@+id/id_tab_top2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:text="微博" />
+
+                <Button
+                    android:id="@+id/id_tab_top3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:text="相册" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/id_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+
+            <com.wxp.weiboprifle.FullyListView
+                android:id="@+id/id_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.wxp.weiboprifle.FullyListView>
+        </LinearLayout>
+    </com.wxp.weiboprifle.ObservableScrollView>
+
+    <include
+        android:id="@+id/id_tab_rl"
+        layout="@layout/include_tab" />
+
+</RelativeLayout>

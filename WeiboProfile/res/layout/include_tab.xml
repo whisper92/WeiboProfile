@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <Button
+        android:id="@+id/id_tab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:text="主页" />
+
+    <Button
+        android:id="@+id/id_tab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:text="微博" />
+
+    <Button
+        android:id="@+id/id_tab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:text="相册" />
+
+</LinearLayout>
