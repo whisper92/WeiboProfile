@@ -13,3 +13,5 @@ ScrollView与ListView嵌套仿微博个人主页
 ###  APK
 
 [WeiboProfile.apk](/src/WeiboProfile.apk)
+
+> 详细说明：[http://www.wisim.me/blog/2015/05/28/WeiboProfile.html](http://www.wisim.me/blog/2015/05/28/WeiboProfile.html)
